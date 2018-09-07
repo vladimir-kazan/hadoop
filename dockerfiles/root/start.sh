@@ -1,11 +1,11 @@
 #!/bin/sh
 
-usermod -d /var/lib/mysql/ mysql
-find /var/lib/mysql/mysql -exec touch -c -a {} + && \
-  service mysql start
+# usermod -d /var/lib/mysql/ mysql
+# find /var/lib/mysql/mysql -exec touch -c -a {} + && \
+#   service mysql start
 
-# service mysql start
-mysql -uroot < hive.sql
+# # service mysql start
+# mysql -uroot < hive.sql
 
 # service ssh start
 
