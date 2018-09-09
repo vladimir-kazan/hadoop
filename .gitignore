@@ -1,2 +1,4 @@
 .DS_Store
+# archive with docker software to prevent downloading
+archive/
 

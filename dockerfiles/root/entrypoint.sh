@@ -7,9 +7,9 @@
 # # service mysql start
 # mysql -uroot < hive.sql
 
-# service ssh start
+service ssh start
 
-
-
+# Hadoop
+start-dfs.sh
 
 /bin/bash

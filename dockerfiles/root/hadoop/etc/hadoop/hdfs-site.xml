@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
-<!-- /opt/hadoop/etc/hadoop/core-site.xml -->
-
 <!--
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -17,6 +15,23 @@
 -->
 
 <!-- Put site-specific property overrides in this file. -->
-
 <configuration>
+  <property>
+    <name>dfs.datanode.data.dir</name>
+    <value>/opt/hdfs/datanode</value>
+    <final>true</final>
+  </property>
+  <property>
+    <name>dfs.namenode.name.dir</name>
+    <value>/opt/hdfs/namenode</value>
+    <final>true</final>
+  </property>
+  <property>
+    <name>dfs.namenode.http-address</name>
+    <value>localhost:50070</value>
+  </property>
+  <property>
+    <name>dfs.replication</name>
+    <value>1</value>
+  </property>
 </configuration>
