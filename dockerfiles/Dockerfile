@@ -76,4 +76,5 @@ RUN $HOME/hadoop/setup.sh
 # RUN find /var/lib/mysql/mysql -exec touch -c -a {} + && service mysql start
 
 ENV DEBIAN_FRONTEND teletype
-CMD /root/entrypoint.sh
+# CMD /root/entrypoint.sh
+ENTRYPOINT [ "/root/entrypoint.sh"]

@@ -1,0 +1,14 @@
+version: '3'
+services:
+  hadoop311:
+    env_file:
+      dockerfiles/.env
+    hostname: localhost
+    container_name: hadoop
+    build:
+      context: dockerfiles
+      # dockerfile: dockerfiles/Dockerfile
+    # ports:
+    #  - "8080:80"
+    stdin_open: true
+    tty: true
